@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: tenants
+  name: applications
   namespace: argocd
 spec:
   generators:
   - git:
-      repoURL: https://github.com/christianh814/example-kubernetes-go-repo
+      repoURL: https://github.com/paoloyx/example-kubernetes-go-repo
       revision: main
       directories:
-      - path: cluster-XXXX/tenants/*
+      - path: cluster-one/applications/*
   template:
     metadata:
       name: '{{path.basename}}'
@@ -26,7 +26,7 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/christianh814/example-kubernetes-go-repo
+        repoURL: https://github.com/paoloyx/example-kubernetes-go-repo
         targetRevision: main
         path: '{{path}}'
       destination:

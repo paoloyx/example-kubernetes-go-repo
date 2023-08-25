@@ -6,10 +6,10 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/christianh814/example-kubernetes-go-repo
+      repoURL: https://github.com/paoloyx/example-kubernetes-go-repo
       revision: main
       directories:
-      - path: cluster-XXXX/core/*
+      - path: cluster-one/core/*
   template:
     metadata:
       name: '{{path.basename}}'
@@ -26,7 +26,7 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/christianh814/example-kubernetes-go-repo
+        repoURL: https://github.com/paoloyx/example-kubernetes-go-repo
         targetRevision: main
         path: '{{path}}'
       destination:
