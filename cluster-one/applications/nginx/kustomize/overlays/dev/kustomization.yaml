@@ -2,3 +2,4 @@ resources:
 - ../../base
 - namespace.yaml
 namePrefix: dev-
+namespace: dev-nginx
