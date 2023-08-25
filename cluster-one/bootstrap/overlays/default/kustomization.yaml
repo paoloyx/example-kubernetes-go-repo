@@ -5,4 +5,4 @@ namespace: argocd
 bases:
 - ../../base
 - ../../../components/applicationsets
-- ../../../components/clustersecrets
+- ../../../components/cluster-secrets
