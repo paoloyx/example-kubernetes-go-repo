@@ -1,4 +1,4 @@
 resources:
 - ../../base
+- namespace.yaml
 namePrefix: prod-
-namespace: prod-nginx
