@@ -1,3 +1,4 @@
 resources:
 - ../../base
 namePrefix: uat-
+namespace: uat-nginx

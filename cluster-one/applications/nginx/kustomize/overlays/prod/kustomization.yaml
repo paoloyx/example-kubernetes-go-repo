@@ -1,3 +1,4 @@
 resources:
 - ../../base
 namePrefix: prod-
+namespace: prod-nginx
