@@ -1,0 +1,4 @@
+resources:
+- overlays/dev
+- overlays/uat
+- overlays/prod
